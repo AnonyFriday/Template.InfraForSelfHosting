@@ -1,0 +1,19 @@
+name: global
+
+services:
+  portainer:
+    container_name: portainer
+    image: portainer/portainer-ce:latest
+    restart: unless-stopped
+    ports:
+      - 9000:9000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer-data:/data
+
+    networks:
+      global-network:
+
+
+volumes:
+  portainer-data:

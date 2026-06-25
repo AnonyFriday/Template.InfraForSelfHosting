@@ -1,0 +1,13 @@
+name: global
+
+networks:
+  global-network:
+    driver: bridge
+
+include:
+
+  # Management
+  - management/portainer/compose.yaml
+
+  # Productivity
+  - productivity/filebrowser/compose.yaml
