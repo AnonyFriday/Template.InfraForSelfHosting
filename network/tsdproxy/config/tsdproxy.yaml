@@ -1,0 +1,21 @@
+defaultProxyProvider: default
+
+docker:
+  local:
+    host: unix:///var/run/docker.sock    # Where to watch containers
+    targetHostname: host.docker.internal # routing traffic back into Docker network
+    defaultProxyProvider: default
+
+tailscale:
+  dataDir: /data/ # store the auth key, state at the pernament directory
+  providers:
+    default:
+      authKey: ""
+      authKeyFile: ""
+      preventDuplicates: true
+
+log:
+  level: info
+  json: true
+  # proxyAccessLog: true
+

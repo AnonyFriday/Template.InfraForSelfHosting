@@ -1,0 +1,28 @@
+name: global
+
+services:
+  tsdproxy:
+    container_name: tsdproxy
+    image: almeidapaulopt/tsdproxy:2
+    restart: unless-stopped
+    ports:
+      - 8000:8080
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock # watches all containers via docker socket
+      - tsdproxy-data:/data
+      - /opt/docker/tsdproxy/config:/config
+
+    networks:
+      - global-network
+
+    labels:
+      tsdproxy.enable: "true"
+      tsdproxy.port.1: "443/https:8000/http" # tailscaleport/tailscaleprotocol:containerport/containerprotocol
+      tsdproxy.dash.visible: "fasle"
+      tsdproxy.name: "tsdproxy"
+
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+volumes:
+  tsdproxy-data:
