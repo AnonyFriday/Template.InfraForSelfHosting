@@ -13,9 +13,14 @@ tailscale:
       authKey: ""
       authKeyFile: ""
       preventDuplicates: true
+      maxCertConcurrency: 4
+
+http:
+  hostname: 127.0.0.1
+  port: 8080
 
 log:
-  level: info
+  level: error
   json: true
-  # proxyAccessLog: true
 
+proxyAccessLog: true
