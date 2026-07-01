@@ -14,3 +14,4 @@ include:
 
   # Network
   - network/tsdproxy/compose.yaml
+  - network/open-port-finder/compose.yaml
