@@ -8,6 +8,7 @@ include:
 
   # Management
   - management/portainer/compose.yaml
+  - management/homepage/compose.yaml
 
   # Productivity
   - productivity/filebrowser/compose.yaml
