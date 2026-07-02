@@ -12,7 +12,10 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock # watches all containers via docker socket
       - tsdproxy-data:/data
-      - /opt/docker/tsdproxy/config:/config
+      - /opt/docker/global/network/tsdproxy/config:/config
+
+    env_file:
+      - .env
 
     networks:
       - global-network
