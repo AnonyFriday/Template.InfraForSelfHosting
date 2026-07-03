@@ -1,0 +1,26 @@
+name: global
+
+services:
+  caddy:
+    container_name: caddy
+
+    # Build the Caddy image with the Cloudflare DNS plugin (current folder)
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    restart: unless-stopped
+
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy-data:/data
+      - caddy-config:/config
+
+    env_file:
+      - .env
+
+    network_mode: host
+
+volumes:
+  caddy-data:
+  caddy-config:
