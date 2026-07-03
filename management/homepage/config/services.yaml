@@ -1,0 +1,31 @@
+- Infrastructure:
+    - Portainer:
+        href: https://portainer.cow-kingsnake.ts.net
+        icon: portainer.png
+        description: Container Management
+        widget:
+          type: portainer
+          url: https://portainer.cow-kingsnake.ts.net
+          env: 3
+          key: "{{HOMEPAGE_VAR_PORTAINER_KEY}}"
+    
+    - Filebrowser:
+        href: https://filebrowser.cow-kingsnake.ts.net
+        icon: filebrowser.png
+        description: File Manager
+        widget:
+          type: filebrowser
+          url: https://filebrowser.cow-kingsnake.ts.net
+          username: "{{HOMEPAGE_VAR_FILEBROWSER_USER}}"
+          password: "{{HOMEPAGE_VAR_FILEBROWSER_PASS}}"
+
+    - TSDProxy:
+        href: https://tsdproxy.cow-kingsnake.ts.net
+        icon: tailscale.png
+        description: Tailscale Reverse Proxy
+
+- Tools:
+    - Open Port Finder:
+        href: https://open-port-finder.cow-kingsnake.ts.net
+        icon: docker.png
+        description: Port Scanner

@@ -23,7 +23,7 @@ services:
     labels:
       tsdproxy.enable: "true"
       tsdproxy.port.1: "443/https:8080/http" # tailscaleport/tailscaleprotocol:containerport/containerprotocol
-      tsdproxy.dash.visible: "false"
+      tsdproxy.dash.visible: "true" # default is false, then machine does not appear on the tsdproxy dashboard
       tsdproxy.name: "tsdproxy"
 
     extra_hosts:

@@ -1,0 +1,262 @@
+[2026-07-02T12:17:30.995Z] info: kubernetes.yaml was copied to the config folder
+[2026-07-02T12:24:50.052Z] info: docker.yaml was copied to the config folder
+[2026-07-02T12:24:50.054Z] info: services.yaml was copied to the config folder
+[2026-07-02T12:24:50.054Z] info: bookmarks.yaml was copied to the config folder
+[2026-07-02T12:24:50.055Z] info: proxmox.yaml was copied to the config folder
+[2026-07-02T12:24:50.068Z] info: widgets.yaml was copied to the config folder
+[2026-07-02T12:24:50.069Z] info: custom.css was copied to the config folder
+[2026-07-02T12:24:50.069Z] info: custom.js was copied to the config folder
+[2026-07-02T16:45:52.139Z] error: undefined
+[2026-07-02T16:53:15.333Z] error: undefined
+[2026-07-02T17:06:49.277Z] error: <httpProxy> Error calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json...
+[2026-07-02T17:06:49.286Z] error: <httpProxy> [
+  500,
+  Error: Client network socket disconnected before secure TLS connection was established
+      at ignore-listed frames {
+    code: 'ECONNRESET',
+    path: null,
+    host: 'portainer.cow-kingsnake.ts.net',
+    port: 443,
+    localAddress: undefined
+  }
+]
+[2026-07-02T17:06:49.287Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T17:07:04.484Z] error: <httpProxy> Error calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json...
+[2026-07-02T17:07:04.486Z] error: <httpProxy> [
+  500,
+  Error: Client network socket disconnected before secure TLS connection was established
+      at ignore-listed frames {
+    code: 'ECONNRESET',
+    path: null,
+    host: 'portainer.cow-kingsnake.ts.net',
+    port: 443,
+    localAddress: undefined
+  }
+]
+[2026-07-02T17:07:04.486Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T17:11:42.615Z] error: <httpProxy> Error calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json...
+[2026-07-02T17:11:42.616Z] error: <httpProxy> [
+  500,
+  Error: Client network socket disconnected before secure TLS connection was established
+      at ignore-listed frames {
+    code: 'ECONNRESET',
+    path: null,
+    host: 'portainer.cow-kingsnake.ts.net',
+    port: 443,
+    localAddress: undefined
+  }
+]
+[2026-07-02T17:11:42.617Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T17:44:16.044Z] error: <httpProxy> Error calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json...
+[2026-07-02T17:44:16.046Z] error: <httpProxy> [
+  500,
+  Error: Client network socket disconnected before secure TLS connection was established
+      at ignore-listed frames {
+    code: 'ECONNRESET',
+    path: null,
+    host: 'portainer.cow-kingsnake.ts.net',
+    port: 443,
+    localAddress: undefined
+  }
+]
+[2026-07-02T17:44:16.046Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:08:33.249Z] error: <httpProxy> Error calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json...
+[2026-07-02T19:08:33.251Z] error: <httpProxy> [
+  500,
+  Error: Client network socket disconnected before secure TLS connection was established
+      at ignore-listed frames {
+    code: 'ECONNRESET',
+    path: null,
+    host: 'portainer.cow-kingsnake.ts.net',
+    port: 443,
+    localAddress: undefined
+  }
+]
+[2026-07-02T19:08:33.251Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:08:33.689Z] error: <httpProxy> Error calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json...
+[2026-07-02T19:08:33.690Z] error: <httpProxy> [
+  500,
+  Error: Client network socket disconnected before secure TLS connection was established
+      at ignore-listed frames {
+    code: 'ECONNRESET',
+    path: null,
+    host: 'portainer.cow-kingsnake.ts.net',
+    port: 443,
+    localAddress: undefined
+  }
+]
+[2026-07-02T19:08:33.690Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:10:08.206Z] error: <httpProxy> Error calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json...
+[2026-07-02T19:10:08.207Z] error: <httpProxy> [
+  500,
+  Error: Client network socket disconnected before secure TLS connection was established
+      at ignore-listed frames {
+    code: 'ECONNRESET',
+    path: null,
+    host: 'portainer.cow-kingsnake.ts.net',
+    port: 443,
+    localAddress: undefined
+  }
+]
+[2026-07-02T19:10:08.207Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:10:09.444Z] error: <httpProxy> Error calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json...
+[2026-07-02T19:10:09.445Z] error: <httpProxy> [
+  500,
+  Error: Client network socket disconnected before secure TLS connection was established
+      at ignore-listed frames {
+    code: 'ECONNRESET',
+    path: null,
+    host: 'portainer.cow-kingsnake.ts.net',
+    port: 443,
+    localAddress: undefined
+  }
+]
+[2026-07-02T19:10:09.445Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:10:54.191Z] error: <httpProxy> Error calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json...
+[2026-07-02T19:10:54.192Z] error: <httpProxy> [
+  500,
+  Error: Client network socket disconnected before secure TLS connection was established
+      at ignore-listed frames {
+    code: 'ECONNRESET',
+    path: null,
+    host: 'portainer.cow-kingsnake.ts.net',
+    port: 443,
+    localAddress: undefined
+  }
+]
+[2026-07-02T19:10:54.192Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:11:41.140Z] error: <httpProxy> Error calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json...
+[2026-07-02T19:11:41.142Z] error: <httpProxy> [
+  500,
+  Error: Client network socket disconnected before secure TLS connection was established
+      at ignore-listed frames {
+    code: 'ECONNRESET',
+    path: null,
+    host: 'portainer.cow-kingsnake.ts.net',
+    port: 443,
+    localAddress: undefined
+  }
+]
+[2026-07-02T19:11:41.143Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:13:49.000Z] error: <httpProxy> Error calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json...
+[2026-07-02T19:13:49.001Z] error: <httpProxy> [
+  500,
+  Error: Client network socket disconnected before secure TLS connection was established
+      at ignore-listed frames {
+    code: 'ECONNRESET',
+    path: null,
+    host: 'portainer.cow-kingsnake.ts.net',
+    port: 443,
+    localAddress: undefined
+  }
+]
+[2026-07-02T19:13:49.001Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:15:35.763Z] error: <httpProxy> Error calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json...
+[2026-07-02T19:15:35.764Z] error: <httpProxy> [
+  500,
+  Error: write EPROTO 48122B70477F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:918:SSL alert number 80
+  
+      at ignore-listed frames {
+    errno: -71,
+    code: 'EPROTO',
+    syscall: 'write'
+  }
+]
+[2026-07-02T19:15:35.764Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:15:36.334Z] error: <httpProxy> Error calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json...
+[2026-07-02T19:15:36.335Z] error: <httpProxy> [
+  500,
+  Error: write EPROTO 48122B70477F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:918:SSL alert number 80
+  
+      at ignore-listed frames {
+    errno: -71,
+    code: 'EPROTO',
+    syscall: 'write'
+  }
+]
+[2026-07-02T19:15:36.335Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:15:47.523Z] error: <httpProxy> Error calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json...
+[2026-07-02T19:15:47.524Z] error: <httpProxy> [
+  500,
+  Error: write EPROTO 48122B70477F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:918:SSL alert number 80
+  
+      at ignore-listed frames {
+    errno: -71,
+    code: 'EPROTO',
+    syscall: 'write'
+  }
+]
+[2026-07-02T19:15:47.525Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:22:36.018Z] error: <httpProxy> Error calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json...
+[2026-07-02T19:22:36.020Z] error: <httpProxy> [
+  500,
+  Error: Client network socket disconnected before secure TLS connection was established
+      at ignore-listed frames {
+    code: 'ECONNRESET',
+    path: null,
+    host: 'portainer.cow-kingsnake.ts.net',
+    port: 443,
+    localAddress: undefined
+  }
+]
+[2026-07-02T19:22:36.020Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:22:37.003Z] error: <httpProxy> Error calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json...
+[2026-07-02T19:22:37.004Z] error: <httpProxy> [
+  500,
+  Error: Client network socket disconnected before secure TLS connection was established
+      at ignore-listed frames {
+    code: 'ECONNRESET',
+    path: null,
+    host: 'portainer.cow-kingsnake.ts.net',
+    port: 443,
+    localAddress: undefined
+  }
+]
+[2026-07-02T19:22:37.004Z] error: <credentialedProxyHandler> HTTP Error 500 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:29:42.647Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:29:43.029Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:29:44.865Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:30:04.123Z] error: <httpProxy> Error calling https://filebrowser.cow-kingsnake.ts.net/api/login...
+[2026-07-02T19:30:04.124Z] error: <httpProxy> [
+  500,
+  Error: Client network socket disconnected before secure TLS connection was established
+      at ignore-listed frames {
+    code: 'ECONNRESET',
+    path: null,
+    host: 'filebrowser.cow-kingsnake.ts.net',
+    port: 443,
+    localAddress: undefined
+  }
+]
+[2026-07-02T19:30:04.125Z] error: <filebrowserProxyHandler> Unexpected status code 500 when logging in to Filebrowser API for service 'Filebrowser'
+[2026-07-02T19:30:04.785Z] error: <httpProxy> Error calling https://filebrowser.cow-kingsnake.ts.net/api/login...
+[2026-07-02T19:30:04.786Z] error: <httpProxy> [
+  500,
+  Error: Client network socket disconnected before secure TLS connection was established
+      at ignore-listed frames {
+    code: 'ECONNRESET',
+    path: null,
+    host: 'filebrowser.cow-kingsnake.ts.net',
+    port: 443,
+    localAddress: undefined
+  }
+]
+[2026-07-02T19:30:04.787Z] error: <filebrowserProxyHandler> Unexpected status code 500 when logging in to Filebrowser API for service 'Filebrowser'
+[2026-07-02T19:30:21.428Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:30:21.527Z] error: <filebrowserProxyHandler> Unexpected status code 403 when logging in to Filebrowser API for service 'Filebrowser'
+[2026-07-02T19:31:09.832Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:31:09.917Z] error: <filebrowserProxyHandler> Unexpected status code 403 when logging in to Filebrowser API for service 'Filebrowser'
+[2026-07-02T19:32:52.909Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:32:52.999Z] error: <filebrowserProxyHandler> Unexpected status code 403 when logging in to Filebrowser API for service 'Filebrowser'
+[2026-07-02T19:40:14.370Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:40:14.567Z] error: <filebrowserProxyHandler> Unexpected status code 403 when logging in to Filebrowser API for service 'Filebrowser'
+[2026-07-02T19:40:15.010Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:40:15.104Z] error: <filebrowserProxyHandler> Unexpected status code 403 when logging in to Filebrowser API for service 'Filebrowser'
+[2026-07-02T19:40:17.257Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:40:17.344Z] error: <filebrowserProxyHandler> Unexpected status code 403 when logging in to Filebrowser API for service 'Filebrowser'
+[2026-07-02T19:40:23.199Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:40:23.310Z] error: <filebrowserProxyHandler> Unexpected status code 403 when logging in to Filebrowser API for service 'Filebrowser'
+[2026-07-02T19:42:54.521Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:42:56.160Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:42:59.667Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1
+[2026-07-02T19:44:12.070Z] error: <credentialedProxyHandler> HTTP Error 404 calling https://portainer.cow-kingsnake.ts.net/api/endpoints/1/docker/containers/json?all=1

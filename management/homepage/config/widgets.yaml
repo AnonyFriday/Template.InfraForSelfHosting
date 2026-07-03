@@ -1,0 +1,35 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/info-widgets/
+
+- logo:
+    icon: https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/heimdall-light.png
+
+- greeting:
+    text_size: sm
+    text: "Welcome, AnonyFriday !!"
+
+- resources:
+    cpu: true
+    memory: true
+    disk: /
+    expanded: true
+    units: metric
+
+- search:
+    provider: google
+    target: _blank
+
+- datetime:
+    text-size: xl
+    format:
+      dateStyle: short
+      timeStyle: short
+      hour12: false
+
+- openweathermap:
+    label: Ho Chi Minh City
+    latitude: 10.82302
+    longitude: 106.62965
+    units: metric
+    provider: openweathermap
