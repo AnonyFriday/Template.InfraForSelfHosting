@@ -12,6 +12,7 @@ include:
 
   # Productivity
   - productivity/filebrowser/compose.yaml
+  - productivity/it-tools/compose.yaml
 
   # Network
   - network/tsdproxy/compose.yaml

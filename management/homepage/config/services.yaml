@@ -29,3 +29,8 @@
         href: https://open-port-finder.cow-kingsnake.ts.net
         icon: docker.png
         description: Port Scanner
+    
+    - IT Tools:
+        href: https://it-tools.cow-kingsnake.ts.net
+        icon: it-tools-light.png
+        description: Useful Tools for IT Development
