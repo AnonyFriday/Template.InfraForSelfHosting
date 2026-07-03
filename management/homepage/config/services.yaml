@@ -3,6 +3,7 @@
         href: https://portainer.cow-kingsnake.ts.net
         icon: portainer.png
         description: Container Management
+        siteMonitor: https://portainer.cow-kingsnake.ts.net
         widget:
           type: portainer
           url: https://portainer.cow-kingsnake.ts.net
@@ -13,6 +14,7 @@
         href: https://filebrowser.cow-kingsnake.ts.net
         icon: filebrowser.png
         description: File Manager
+        siteMonitor: https://filebrowser.cow-kingsnake.ts.net
         widget:
           type: filebrowser
           url: https://filebrowser.cow-kingsnake.ts.net
@@ -23,14 +25,17 @@
         href: https://tsdproxy.cow-kingsnake.ts.net
         icon: tailscale.png
         description: Tailscale Reverse Proxy
+        siteMonitor: https://tsdproxy.cow-kingsnake.ts.net
 
 - Tools:
     - Open Port Finder:
         href: https://open-port-finder.cow-kingsnake.ts.net
         icon: docker.png
         description: Port Scanner
+        siteMonitor: https://open-port-finder.cow-kingsnake.ts.net
     
     - IT Tools:
         href: https://it-tools.cow-kingsnake.ts.net
         icon: it-tools-light.png
         description: Useful Tools for IT Development
+        siteMonitor: https://it-tools.cow-kingsnake.ts.net
