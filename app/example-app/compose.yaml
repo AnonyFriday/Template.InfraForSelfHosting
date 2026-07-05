@@ -23,10 +23,5 @@ services:
     networks:
       - global-network
 
-    labels:
-      tsdproxy.enable: "true"
-      tsdproxy.port.1: "443/https:2368/http"
-      tsdproxy.name: "ghost"
-
 volumes:
   ghost-data:
