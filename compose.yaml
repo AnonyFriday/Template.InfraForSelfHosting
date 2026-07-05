@@ -18,3 +18,8 @@ include:
   # Network
   - infra/network/tsdproxy/compose.yaml
   - infra/network/caddy/compose.yaml
+
+  # App
+  - app/database/mysql/compose.yaml
+  - app/example-app/compose.yaml
+  

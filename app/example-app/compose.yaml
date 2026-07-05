@@ -1,0 +1,32 @@
+name: app
+
+services:
+  ghost:
+    container_name: ghost
+    image: ghost:6.50.0-bookworm
+    restart: unless-stopped
+    depends_on:
+      - mysql
+    ports:
+      - 9100:2368
+    volumes:
+      - ghost-data:/var/lib/ghost/content
+    environment:
+      database__client: ${DATABASE_CLIENT}
+      database__connection__host: ${DATABASE_HOST}
+      database__connection__user: ${DATABASE_USER}
+      database__connection__password: ${DATABASE_PASSWORD}
+      database__connection__database: ${DATABASE_NAME}
+      url: ${URL}
+    env_file:
+      - .env
+    networks:
+      - global-network
+
+    labels:
+      tsdproxy.enable: "true"
+      tsdproxy.port.1: "443/https:2368/http"
+      tsdproxy.name: "ghost"
+
+volumes:
+  ghost-data:
