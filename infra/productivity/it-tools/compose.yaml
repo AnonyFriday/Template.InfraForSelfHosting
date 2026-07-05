@@ -6,7 +6,7 @@ services:
     image: corentinth/it-tools:latest
     restart: unless-stopped
     ports:
-      - "8082:80"
+      - "8004:80"
 
     networks:
       - global-network

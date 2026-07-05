@@ -7,14 +7,14 @@ networks:
 include:
 
   # Management
-  - management/portainer/compose.yaml
-  - management/homepage/compose.yaml
+  - infra/management/portainer/compose.yaml
+  - infra/management/homepage/compose.yaml
 
   # Productivity
-  - productivity/filebrowser/compose.yaml
-  - productivity/it-tools/compose.yaml
+  - infra/productivity/filebrowser/compose.yaml
+  - infra/productivity/it-tools/compose.yaml
+  - infra/productivity/open-port-finder/compose.yaml
 
   # Network
-  - network/tsdproxy/compose.yaml
-  - network/open-port-finder/compose.yaml
-  - network/caddy/compose.yaml
+  - infra/network/tsdproxy/compose.yaml
+  - infra/network/caddy/compose.yaml

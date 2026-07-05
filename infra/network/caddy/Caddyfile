@@ -1,5 +1,5 @@
 {
-  email {$ACME_EMAIL}
+  email {$ACME_EMAIL:admin@anonyfriday.io.vn}
   acme_dns cloudflare {$CLOUDFLARE_API_TOKEN}
   http_port 80
   https_port 443
@@ -11,21 +11,21 @@
 # }
 
 internal.anonyfriday.io.vn {
-  reverse_proxy localhost:3000
+  reverse_proxy localhost:8002
 }
 
 portainer.internal.anonyfriday.io.vn {
-  reverse_proxy localhost:9000
+  reverse_proxy localhost:8001
 }
 
 filebrowser.internal.anonyfriday.io.vn {
-  reverse_proxy localhost:8080
+  reverse_proxy localhost:8003
 }
 
 it-tools.internal.anonyfriday.io.vn {
-  reverse_proxy localhost:8082
+  reverse_proxy localhost:8004
 }
 
 tsdproxy.internal.anonyfriday.io.vn {
-  reverse_proxy localhost:8081
+  reverse_proxy localhost:8000
 }

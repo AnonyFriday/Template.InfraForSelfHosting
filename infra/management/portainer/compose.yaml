@@ -1,0 +1,25 @@
+name: global
+
+services:
+  portainer:
+    container_name: portainer
+    image: portainer/portainer-ce:latest
+    restart: unless-stopped
+    ports:
+      - 8001:9000
+
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer-data:/data
+
+    networks:
+      - global-network
+
+    labels:
+      tsdproxy.enable: "true"
+      tsdproxy.port.1: "443/https:9000/http"
+      tsdproxy.name: "portainer"
+
+volumes:
+  portainer-data:
+
