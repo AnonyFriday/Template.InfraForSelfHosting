@@ -1,78 +1,74 @@
 # Infrastructure and Apps Port Registry
 
+Docker Compose template for local self-hosted infrastructure. Routes public applications through Cloudflare Tunnel and keeps internal administration tools private and secure inside a Tailscale VPN network via Caddy.
+
 ## Network Workflows
 
 ### Public Access Flow (Cloudflare Tunnel)
 
 ```mermaid
 graph LR
-    User["<img src='https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/chrome.png' width='14'/> Public Internet User"] -->|https://blog.anonyfriday.io.vn| CFEdge["<img src='https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/cloudflare.png' width='14'/> Cloudflare Edge"]
-    CFEdge -->|Secure Tunnel Connection| CFTunnel["<img src='https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/cloudflare.png' width='14'/> Cloudflared Container"]
-    CFTunnel -->|Direct Forward| Ghost["<img src='https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/ghost.png' width='14'/> Ghost Container: Port 9100"]
-    Ghost -->|Internal Network| MySQL["<img src='https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/mysql.png' width='14'/> MySQL Container: Port 9000"]
+    User["<img src='./images/chrome.png' width='14'/> Public Internet User"] -->|https://blog.anonyfriday.io.vn| CFEdge["<img src='./images/cloudflare.png' width='14'/> Cloudflare Edge"]
+    CFEdge -->|Secure Tunnel Connection| CFTunnel["<img src='./images/cloudflare.png' width='14'/> Cloudflared Container"]
+    CFTunnel -->|Direct Forward| Ghost["<img src='./images/ghost.png' width='14'/> Ghost Container: Port 9100"]
+    Ghost -->|Internal Network| MySQL["<img src='./images/mysql.png' width='14'/> MySQL Container: Port 9000"]
 ```
 
 ### Private Access Flow (Tailscale VPN + Caddy)
 
 ```mermaid
 graph TD
-    Admin["<img src='https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/tailscale.png' width='14'/> Tailscale VPN User"] -->|https://*.internal.anonyfriday.io.vn| Caddy["<img src='https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/caddy.png' width='14'/> Caddy Container: Ports 80/443"]
-    Caddy -->|Reverse Proxy| Portainer["<img src='https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/portainer.png' width='14'/> Portainer: 8001"]
-    Caddy -->|Reverse Proxy| Homepage["<img src='https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/homepage.png' width='14'/> Homepage: 8002"]
-    Caddy -->|Reverse Proxy| Filebrowser["<img src='https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/filebrowser.png' width='14'/> Filebrowser: 8003"]
-    Caddy -->|Reverse Proxy| ITTools["<img src='https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/it-tools.png' width='14'/> IT-Tools: 8004"]
-    Caddy -->|Reverse Proxy| TSDProxy["<img src='https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/tailscale.png' width='14'/> TSDProxy: 8000"]
-    Caddy -->|Reverse Proxy| OpenPortFinder["<img src='https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/docker.png' width='14'/> Open-Port-Finder: 56789"]
+    Admin["<img src='./images/tailscale.png' width='14'/> Tailscale VPN User"] -->|https://*.internal.anonyfriday.io.vn| Caddy["<img src='./images/caddy.png' width='14'/> Caddy Container: Ports 80/443"]
+    Caddy -->|Reverse Proxy| Portainer["<img src='./images/portainer.png' width='14'/> Portainer: 8001"]
+    Caddy -->|Reverse Proxy| Homepage["<img src='./images/homepage.png' width='14'/> Homepage: 8002"]
+    Caddy -->|Reverse Proxy| Filebrowser["<img src='./images/filebrowser.png' width='14'/> Filebrowser: 8003"]
+    Caddy -->|Reverse Proxy| ITTools["<img src='./images/it-tools.png' width='14'/> IT-Tools: 8004"]
+    Caddy -->|Reverse Proxy| TSDProxy["<img src='./images/tsd-proxy.png' width='14'/> TSDProxy: 8000"]
+    Caddy -->|Reverse Proxy| OpenPortFinder["<img src='./images/docker.png' width='14'/> Open-Port-Finder: 56789"]
 
     %% SSL Verification
-    CF_API["<img src='https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/cloudflare.png' width='14'/> Cloudflare DNS API"] <-->|ACME DNS Challenge| Caddy
+    CF_API["<img src='./images/cloudflare.png' width='14'/> Cloudflare DNS API"] <-->|ACME DNS Challenge| Caddy
 ```
 
 ## Service Screenshots
 
 Here are screenshots of the running services.
 
-<style>
-    table, td, tr {
-        border: 1px solid black;
-    }
-</style>
-
-<table style="border-collapse: separate; border-spacing: 0 15px;">
+<table border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="50%" align="center">
       <b>Homepage</b><br>
-      <img src="./images/homepage.png" alt="Homepage" style="width: 100%; height: 250px; object-fit: cover;">
+      <img src="./images/homepage.png" alt="Homepage" width="100%" height="250">
     </td>
     <td width="50%" align="center">
       <b>Portainer</b><br>
-      <img src="./images/portainer_list.png" alt="Portainer" style="width: 100%; height: 250px; object-fit: cover;">
+      <img src="./images/portainer_list.png" alt="Portainer" width="100%" height="250">
     </td>
   </tr>
   <tr>
     <td width="50%" align="center">
       <b>Filebrowser</b><br>
-      <img src="./images/filebrowser.png" alt="Filebrowser" style="width: 100%; height: 250px; object-fit: cover;">
+      <img src="./images/filebrowser.png" alt="Filebrowser" width="100%" height="250">
     </td>
     <td width="50%" align="center">
       <b>IT-Tools</b><br>
-      <img src="./images/it-tools.png" alt="IT-Tools" style="width: 100%; height: 250px; object-fit: cover;">
+      <img src="./images/it-tools.png" alt="IT-Tools" width="100%" height="250">
     </td>
   </tr>
   <tr>
     <td width="50%" align="center">
       <b>Ghost Blog (Public)</b><br>
-      <img src="./images/app_ghost.png" alt="Ghost Blog" style="width: 100%; height: 250px; object-fit: cover;">
+      <img src="./images/app_ghost.png" alt="Ghost Blog" width="100%" height="250">
     </td>
     <td width="50%" align="center">
       <b>Open-Port-Finder</b><br>
-      <img src="./images/open-port-finder.png" alt="Open-Port-Finder" style="width: 100%; height: 250px; object-fit: cover;">
+      <img src="./images/open-port-finder.png" alt="Open-Port-Finder" width="100%" height="250">
     </td>
   </tr>
   <tr>
     <td width="50%" align="center">
       <b>Tailscale Network</b><br>
-      <img src="./images/tailscale_network.png" alt="Tailscale Network" style="width: 100%; height: 250px; object-fit: cover;">
+      <img src="./images/tailscale_network.png" alt="Tailscale Network" width="100%" height="250">
     </td>
     <td width="50%" align="center">
       <!-- Empty Slot for future service -->
