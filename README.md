@@ -6,29 +6,11 @@ Docker Compose template for local self-hosted infrastructure. Routes public appl
 
 ### Public Access Flow (Cloudflare Tunnel)
 
-```mermaid
-graph LR
-    User["<img src='./images/chrome.png' width='14'/> Public Internet User"] -->|https://blog.anonyfriday.io.vn| CFEdge["<img src='./images/cloudflare.png' width='14'/> Cloudflare Edge"]
-    CFEdge -->|Secure Tunnel Connection| CFTunnel["<img src='./images/cloudflare.png' width='14'/> Cloudflared Container"]
-    CFTunnel -->|Direct Forward| Ghost["<img src='./images/ghost.png' width='14'/> Ghost Container: Port 9100"]
-    Ghost -->|Internal Network| MySQL["<img src='./images/mysql.png' width='14'/> MySQL Container: Port 9000"]
-```
+<img src="./images/public_access_flow.png" alt="Description" style="width: 100%; max-width: 100%; height: auto;">
 
 ### Private Access Flow (Tailscale VPN + Caddy)
 
-```mermaid
-graph TD
-    Admin["<img src='./images/tailscale.png' width='14'/> Tailscale VPN User"] -->|https://*.internal.anonyfriday.io.vn| Caddy["<img src='./images/caddy.png' width='14'/> Caddy Container: Ports 80/443"]
-    Caddy -->|Reverse Proxy| Portainer["<img src='./images/portainer.png' width='14'/> Portainer: 8001"]
-    Caddy -->|Reverse Proxy| Homepage["<img src='./images/homepage.png' width='14'/> Homepage: 8002"]
-    Caddy -->|Reverse Proxy| Filebrowser["<img src='./images/filebrowser.png' width='14'/> Filebrowser: 8003"]
-    Caddy -->|Reverse Proxy| ITTools["<img src='./images/it-tools.png' width='14'/> IT-Tools: 8004"]
-    Caddy -->|Reverse Proxy| TSDProxy["<img src='./images/tsd-proxy.png' width='14'/> TSDProxy: 8000"]
-    Caddy -->|Reverse Proxy| OpenPortFinder["<img src='./images/docker.png' width='14'/> Open-Port-Finder: 56789"]
-
-    %% SSL Verification
-    CF_API["<img src='./images/cloudflare.png' width='14'/> Cloudflare DNS API"] <-->|ACME DNS Challenge| Caddy
-```
+<img src="./images/private_access_flow.png" alt="Description" style="width: 100%; max-width: 100%; height: auto;">
 
 ## Service Screenshots
 
